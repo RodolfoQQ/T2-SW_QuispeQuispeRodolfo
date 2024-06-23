@@ -1,0 +1,17 @@
+
+INSERT INTO Autor (NomAutor, ApeAutor, FechNacAutor)
+VALUES
+('Gabriel', 'Garcia Marquez', '1927-03-06'),
+('Isabel', 'Allende', '1942-08-02'),
+('Jorge', 'Luis Borges', '1899-08-24'),
+('Mario', 'Vargas Llosa', '1936-03-28'),
+('Julio', 'Cortazar', '1914-08-26');
+
+
+INSERT INTO Publicacion (Titulo, Resumen, FechPublicacion, IdAutor)
+VALUES
+('Cien Anos de Soledad', 'Novela sobre la familia Buendia en el pueblo ficticio de Macondo', '1967-06-05', 1),
+('La Casa de los Espiritus', 'Historia de la familia Trueba a lo largo de varias generaciones', '1982-11-15', 2),
+('El Aleph', 'Coleccion de cuentos sobre la metafisica y la filosofia', '1949-06-24', 3),
+('La Ciudad y los Perros', 'Novela sobre la vida en una academia militar en Lima', '1963-02-01', 4),
+('Rayuela', 'Novela sobre la vida de Horacio Oliveira en Paris y Buenos Aires', '1963-06-28', 5);
