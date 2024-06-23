@@ -9,6 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 @Service
 public class ServicePublicacion implements InterServicePublicacion {
+
     private  InterefacePublicacion interfacePublicacion;
 
     @Override
