@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -25,4 +26,6 @@ public class Autor {
     @Temporal(TemporalType.DATE)
     private Date fechNacAutor;
 
+    @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Publicacion> publicaciones;
 }
