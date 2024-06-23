@@ -7,25 +7,27 @@ import lombok.Setter;
 import java.util.Date;
 import java.util.List;
 
+
 @Entity
 @Getter
 @Setter
+@Table(name = "autor")
 public class Autor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idAutor;
+    @Column(name = "idautor")
+    private Integer idAutor;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "NomAutor")
     private String nomAutor;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "ApeAutor")
     private String apeAutor;
 
-    @Column(nullable = false)
-    @Temporal(TemporalType.DATE)
+    @Column(name = "FechNacAutor")
     private Date fechNacAutor;
 
-    @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "autor")
     private List<Publicacion> publicaciones;
 }

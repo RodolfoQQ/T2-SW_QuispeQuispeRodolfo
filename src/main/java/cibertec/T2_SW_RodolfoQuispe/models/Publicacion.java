@@ -8,6 +8,7 @@ import java.util.Date;
 @Table
 @Entity
 @Data
+
 public class Publicacion {
 
     @Id
